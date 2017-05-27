@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .d(style="margin-top: 100px;")
+  .container
+    form(method='post' action="/auth/logout" style="display: inline; text-align: center;" )
+      input(class='btn btn-primary' type='submit', value='تسجيل الخsdfdsfروج')
+    form(method='post' action="/artical_text")
+      .editor
+        label.control-label
+        h1(style="text-align:center; width: 100% !important;") :عنوان الsdfdsfمقال
+        textarea.form-control(name='artical-header' text-align='right' style="width 60% !important; float: right; margin-bottom: 20px;" placeholder='عنوان المقال')
+        h1(style="text-align:center; width: 100% !important;") :الموsdfsdafضوع
+        textarea#editor1(name='artical_content', rows='10', cols='80' style="width: 50% !important;")
+        button.btn.btn-primary(type='submit', value='send' style='margin-left: 50%; margin-top:10px;;') أنشر الsdfdsfمقال
+    script(src='//cdn.ckeditor.com/4.6.2/basic/ckeditor.js')
+    script
+      | CKEDITOR.replace( 'editor1' );

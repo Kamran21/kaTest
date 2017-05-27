@@ -1,0 +1,254 @@
+extends layout
+
+block content
+    // Header
+    header
+      .container
+        .intro-text(style='padding-top: 30px !important; margin-top: 0px !important; height: 750px; margin-top: 14%;')
+          .intro-lead-in(style="font-family: 'Reem Kufi', sans-serif !important;") 
+          .intro-heading(style="font-family: 'Reem Kufi', sans-serif !important;") 
+          
+           // About Section
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") نبذة عن الجمعية
+            h4 سلامتكم - رغم الألم يوجد أمل
+            br
+            br
+        .row
+          .col-lg-12
+            ul.timeline
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/1.png', style='height: 100% !important;', alt='')
+                .timeline-panel
+                  .timeline-heading
+                   // h4 سلامتكم - رغم الألم يوجد أمل
+                  
+                  .timeline-body
+                    h4
+                      | انطلاقتنا بدأت بفكرة بسيطة! تتمثل في تقديم مساعدات للمرضى العرب في المستشفيات الاسرائيلية، وخصوصا في الترجمة! ولكن خلال فترة قصيرة اصبحت "سلامتكم" عنواناً هاما، ووحيدا في معظم الحالات، في العديد من مستشفيات القدس والمركز، من أجل تقديم مساعدات لآلاف المرضى الفلسطينيين من الضفة وغزة: في التغطيات الطبية والمواصلات والاجهزة والادوات الطبية، بالاضافة الى النشاطات الترفيهية داخل وخارج المستشفيات 
+
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about1.jpg', style='height: 100% !important;', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 "إذا نظرت بعين التفاؤل إلى الوجود، لرأيت الجمال شائعاً في كل ذراته"
+                    h4 وهذا ما نسعى عمله في "سلامتكم" - أن نعطي ذلك الأمل في كل لحظات الألم.
+
+                    //h4.subheading فتح مكتبة ابوغوش لطلاب الجامعات 
+                  //.timeline-body
+                    p.text-muted
+                      | قامت الجمعية بافتتاح مكتبة ابوغوش لتصبح مكبة عامه لطلاب ابوغوش وللاجتماعات , فقد قامت بترتيب وتجهيز المكتبة لكي يتمكنوا الطلاب بالدراسة فيها بشكل جماعي او فردي في جو لطيف بعيدا عن كل ازعاج
+
+              li.timeline-inverted
+                .timeline-image
+                  h4
+                    | كن جزءاً
+                    br
+                    | من 
+                    br
+                    | ...هذه الجمعية
+    
+  
+   
+    // Team Section
+    section#team.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;")  اعضاء ادارة سلامتكم
+            hr
+            hr
+         .container  
+           .row 
+              .col-md-4
+                       ul.reema
+                           .timeline-image
+                            h4
+                              br
+                              | حنين مجادلة
+                              br
+                              | طالبة دكتوراة
+                              br
+                              | في العمل الاجتماعي
+                              br   
+                     .col-md-4
+                      ul.reema
+                          .timeline-image
+                            h4
+                              br
+                              | المحامي 
+                              br
+                              | يعقوب ابراهيم
+                              br
+                              | لقب ثان في المحاماة             
+                    .col-md-4
+                      ul.reema
+                          .timeline-image
+                              h4
+                                br
+                                | ريما ابو قطيش
+                                br
+                                | معالجة بالنطق 
+                                br
+                                | وصاحبة لقب ثاني
+                                br
+                                | مديرة الجمعية
+                                
+        .row           
+          .col-md-2
+            ul.fuad             
+                       
+        .row                    
+          .col-md-2
+                   ul.fuad
+                      .timeline-image
+                        h4
+                          br
+                          | تيسير عليان
+                          br
+                          | مضمد مؤهل
+                          br          
+          .col-md-2
+                   ul.fuad
+                      .timeline-image
+                        h4
+                          br
+                          | نورا جبر
+                          br
+                          | طالبة طب
+                          br
+                          
+          .col-md-2
+                   ul.fuad
+                      .timeline-image
+                        h4
+                          br
+                          | يوسف زياد
+                          br
+                          | طالب محاماة
+                          br                  
+           .col-md-2
+                   ul.fuad
+                      .timeline-image
+                        h4
+                          br
+                          | نسرين ابراهيم
+                          br
+                          | معلمة
+                          br
+           .col-md-2
+                   ul.fuad
+                      .timeline-image
+                        h4
+                          br
+                          | الدكتور شادي صالح
+                          br
+                          | طبيب
+                          br
+               .col-md-2
+                       ul.fuad
+                          .timeline-image
+                            h4
+                              br
+                              | عبير جبر
+                              br
+                              | موظفه 
+                              br
+
+
+
+              // donate Section
+    section#donate(style="font-family: 'Reem Kufi', sans-serif !important;")
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") سلامتكم - رغم الألم يوجد أمل 
+            h3.section-subheading.text-muted يمكنكم التبرع بإحدى الطرق التالية 
+        .row.text-center
+              .col-md-3
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x.text-primary
+                  i.fa.fa-id-card-o.fa-stack-1x.fa-inverse 
+                h4.service-heading
+                  // E-Commerce
+                p.text-muted(style='font-weight: !important;')
+                  |تحويل التبرع الى حساب 
+                  | بنك هبينلئومي  הבינלאומי (31) 
+                  |  الفرع الرئيسي \ القدس - 012 - 
+                  |حساب رقم 842907
+                  |رمز الحساب 409
+             .col-md-3
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x.text-primary
+                  i.fa.fa-university.fa-stack-1x.fa-inverse
+                h4.service-heading
+                  // E-Commerce
+                p.text-muted(style='font-weight: !important;')
+                  |تحويل التبرع الى حساب 
+                  | بنك هبينلئومي  הבינלאומי (31) 
+                  |  الفرع الرئيسي \ القدس - 012 - 
+                  |حساب رقم 842907
+                  |رمز الحساب 409
+              .col-md-3
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x.text-primary
+                  i.fa.fa-newspaper-o.fa-stack-1x.fa-inverse
+                h4.service-heading
+                  // Responsive Design
+                p.text-muted(style='font-weight: bold !important;')
+                  | تحرص الجمعية على أن تبقى صوتها مسموعاً, مؤثراً من خلال إنشاء مجلة ثقافية دوريّة, متنوعة (ولتأخذ الكلمة حقها في التأثير)
+              .col-md-3
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x.text-primary
+                  i.fa.fa-users.fa-stack-1x.fa-inverse
+                h4.service-heading
+                  // Web Security
+                p.text-muted(style='font-weight: bold !important;')
+                  | تشكّل الجمعية وأعضاؤها جسداً مترابطاَ متماسكاَ, وتسعى بدورها إلى مد الجسور بين أعضائها واستقطاب أكبر عدد ممكن من الأكاديميين الذين تهمهم مصلحة بلدهم. فهنالك قضايا مشتركة عالقة ممكن متابعتها معًا.
+            
+
+
+
+     // contact Section
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading راسلنا
+            h3.section-subheading.text-muted(style='color: black !important;') جمعية سلامتكم تشكرك جزيل الشكر على مراسلتك لنا
+        .row
+          form(method="post" action="/contact" class=".col-md-5")
+            .row
+              .form-group
+                input#name.form-control(name='username',type='text', placeholder='إسمك *', required='', data-validation-required-message='الرجاء كتابة اسمك')
+                p.help-block.text-danger
+              .form-group
+                input#email.form-control(name='email',type='email', placeholder='أيميل *', required='', data-validation-required-message='الرجاء كتابة بريدك الالكتروني.')
+                p.help-block.text-danger
+              .form-group
+                input#phone.form-control(name='tel',type='tel', placeholder='رقم الهاتف *', required='', data-validation-required-message='الرجاء كتابة رقمك.')
+                p.help-block.text-danger
+              .form-group
+                textarea#message.form-control(name='message',placeholder='الرسالة *', required='', data-validation-required-message='لا يمكن ارسال رسالة فارغة.')
+                p.help-block.text-danger
+            .clearfix
+              .text-center
+                #success
+                button.btn.btn-xl(type='submit') أرسل
+          .col-md-2
+          .col-md-5
+            ul.list-item
+              
+                 span.fa-stack
+                  i.fa.fa-phone-square.fa-stack-2x.text-primary :0524504404
+                  i.fa.fa-fax-square.fa-stack-2x.text-primary :025330111
+              
+                  
+                h4 فاكس: 025330111
+                h4 البريد الالكتروني: salametcom@gmail.com
+                h4 حساب الفيس بوك: salametcom

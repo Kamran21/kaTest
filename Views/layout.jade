@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title موقع جمعية سلامتكم
+    // Bootstrap Core CSS
+    link(href='/vendor/bootstrap/css/bootstrap.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='https://fonts.googleapis.com/css?family=Reem+Kufi', rel='stylesheet')
+    link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // Theme CSS
+    link(href='/css/agency.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', integrity='sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY', crossorigin='anonymous')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js', integrity='sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo', crossorigin='anonymous')
+  body#page-top.index
+    // Navigation
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top(style='color: #3f7619 !important;')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll(style="font-family: 'Reem Kufi', sans-serif !important;")
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only توجيه
+            |  القائمة  
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='../', style="font-family: 'Reem Kufi', sans-serif !important;") سلامتكم - رغم الألم يوجد أمل
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          if page=="home"
+              ul.nav.navbar-nav.navbar-right
+                li.hidden
+                  a(href='#')
+                li
+                  a.page-scroll(href='#contact', style='font-size: 20px !important; color: #fff !important; font-weight: bold !important;') راسلنا
+                  
+                li
+                  a.page-scroll(href='#donate', style='font-size: 20px !important; color: #fff !important; font-weight: bold !important;') تبرع لنا
+                  
+                li
+                  a.page-scroll(href='#team', style=' font-size: 20px !important; color: #fff !important; font-weight: bold !important;') أعضاء الجمعية
+                li
+                  a.page-scroll(href='#about', style='font-size: 20px !important; color: #fff !important; font-weight: bold !important;') نبذة عن الجمعية
+                li
+                  a.page-scroll(href='/auth/login', style='font-size: 20px !important; color: #B22222 !important; font-weight: bold !important;') دخول الاعضاء
+          if page=="artical"
+            ul.nav.navbar-nav.navbar-right
+                li
+                  img(src='img/logo_transparent.png',style="width:70px; height:70px;")
+             
+
+        // /.navbar-collapse
+      // /.container-fluid
+   
+    block content
+
+    footer
+      .container
+        .row
+          .col-md-4
+            span.copyright Azrieli's Student @2017
+          
+          .col-md-4
+    // Portfolio Modals
+    // Use the modals below to showcase details about your portfolio projects!
+    // Portfolio Modal 1
+    #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .close-modal(data-dismiss='modal')
+            .lr
+              .rl
+          .container
+            .row
+              .col-lg-8.col-lg-offset-2
+                .modal-body
+                  // Project Details Go Here
+                  h2 Project Name
+                  p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                  img.img-responsive.img-centered(src='/img/portfolio/roundicons-free.png', alt='')
+                  p
+                    //
+                      Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  p
+                    //
+                     strong Want these icons in this portfolio item sample?
+                      You can download 60 of them for free, courtesy of 
+                     a(href='https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc') RoundIcons.com
+                      , or you can purchase the 1500 icon set 
+                    a(href='https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc') here
+                    | .
+                  ul.list-inline
+                    //
+                     li Date: July 2014
+                     li Client: Round Icons
+                     li Category: Graphic Design
+                     button.btn.btn-primary(type='button', data-dismiss='modal')
+                     i.fa.fa-times
+                       Close Project
+
+    // jQuery   
+    script(src='/vendor/jquery/jquery.min.js')
+    // Bootstrap Core JavaScript
+    script(src='/vendor/bootstrap/js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', integrity='sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb', crossorigin='anonymous')
+    // Contact Form JavaScript
+    script(src='/js/jqBootstrapValidation.js')
+    script(src='/js/contact_me.js')
+    // Theme JavaScript
+    script(src='/js/agency.min.js')
+    script(src='/js/modal.js') 
+    
+
